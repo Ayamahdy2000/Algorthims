@@ -41,7 +41,6 @@ header div nav .navbar ul {
 }
 header div nav .navbar ul li {
   padding-top: 2%;
-  padding-top: 2%;
   height: 38px;
 }
 header div nav .navbar ul li#first_child {
@@ -313,6 +312,16 @@ section.sort .sort-div .Search .bg-persian {
   padding: 3% 5%;
   border-radius: 5px;
   box-shadow: 1px 6px 7px #000000b0;
+}
+.full-screen .half form fieldset {
+  border-color: #fff;
+  height: 400px;
+  box-shadow: 1px 6px 7px #000000b0;
+}
+.full-screen .half form fieldset legend {
+  color: #00c6d7;
+  font-size: 25px;
+  text-align: center;
 }
 .full-screen .half.search_box {
   height: 550px;
