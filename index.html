@@ -16,14 +16,41 @@
 
 <body>
      <div id="block" class="full-screen form">
-        
-        <div class="half">
-          <form action="#" method="POST">
+        <span class="exit"><i id="exit-form" class="fas fa-times-circle"></i></span>
+        <div id="text" class="half">
+          <form id="submit" onsubmit="submit_exit()" action="#" method="POST">
               <fieldset>
                   <legend>Sign up</legend>
+               
+                  
+                    <label class="form-sty" for="yourname"> Enter your name :</label> 
+                    <input class="form-sty" type="text" name="name" id="yourname"  required="required">
+                    <label class="form-sty"  for="email">Enter your e_mail :</label> 
+                    <input class="form-sty" type="email" name="email" id="email"   required="required" >
+                    <label class="form-sty" for="yourpassword">Enter your password :</label> 
+                    <input class="form-sty" type="password" name="password" id="yourpassword"  required="required">
+                  
+                    <span class="radio" >
+                        <input type="radio" name="gender" value="male" checked> Male
+                        <input type="radio" name="gender" value="female"> Female
+                      
+                      </span>
+                  <br>
+                
+                  <select  required="required" >
+                    <option value="1"> Your country </option>
+                    <option value="2">Egypt</option>
+                    <option value="3">South Korea</option>
+                    <option value="4">England</option>
+                   
+                </select>
+                <button type="submit"  >REGESTER</button>
+                   
+                  
               </fieldset>
              
           </form>
+         
             </div>
             </div>
     <a name="home"></a>
@@ -39,7 +66,6 @@
                             <ul>
                                 <li><a href="#sort">Sort</a></li>
                                 <li><a href="#Search">Search</a></li>
-                                <li><a href="#tree">Tree</a></li>
                             </ul>
 
                         </li>
@@ -310,9 +336,9 @@ i = l ; j=r+1
         <div class="half">
             <h3>Selection sort</h3>
             Enter your size :
-            <input type="text" name="size" id="size_selection">
+            <input class="form-sty" type="text" name="size" id="size_selection">
             Enter your array :*put , affer every number*
-            <input type="text" name="array" id="array_selection">
+            <input class="form-sty" type="text" name="array" id="array_selection">
             <button id="selection_result" class="bg-persian">Run</button>
             <div id="selection_output">
 
@@ -461,9 +487,9 @@ i = l ; j=r+1
         <div class="half">
             <h3>Bubble sort</h3>
             Enter your size :
-            <input type="text" name="size" id="size_bubble">
+            <input class="form-sty" type="text" name="size" id="size_bubble">
             Enter your array :*put , affer every number*
-            <input type="bubble_text" name="array" id="array_bubble">
+            <input class="form-sty" type="bubble_text" name="array" id="array_bubble">
             <button id="bubble_result" class="bg-persian">Run</button>
             <div id="bubble_output">
 
@@ -612,9 +638,9 @@ i = l ; j=r+1
         <div class="half">
             <h3>Insertion sort</h3>
             Enter your size :
-            <input type="text" name="size" id="size_insertion">
+            <input class="form-sty"  type="text" name="size" id="size_insertion">
             Enter your array :*put , affer every number*
-            <input type="insertion_text" name="array" id="array_insertion">
+            <input class="form-sty"  type="insertion_text" name="array" id="array_insertion">
             <button id="insertion_result" class="bg-persian">Run</button>
             <div id="insertion_output">
 
@@ -757,9 +783,9 @@ i = l ; j=r+1
         <div class="half">
             <h3>Merge sort</h3>
             Enter your size :
-            <input type="text" name="merge_size" id="size_merge">
+            <input class="form-sty"  type="text" name="merge_size" id="size_merge">
             Enter your array :*put , affer every number*
-            <input type="text" name="merge_array" id="array_merge">
+            <input class="form-sty"  type="text" name="merge_array" id="array_merge">
             <button id="merge_result" class="bg-persian">Run</button>
             <div id="merge_output">
 
@@ -898,19 +924,19 @@ i = l ; j=r+1
         <div class="half">
             <h3>Merge description</h3>
             <br>
-            <p>Example: 8 3 2 9 7 1 5 4</p>
+            <p>Example: 70 50 30 10 20 40 60</p>
             <img class="img-style" src="images/merge.png" alt="selection-des">
         </div>
     </div>
     <!-- quick_model -->
-    <div id="quick" class="full-screen full ">
+    <div id="quick" class="full-screen full "> class="form-sty" 
         <span class="exit"><i id="exit_quick" class="fas fa-times-circle"></i></span>
         <div class="half">
             <h3>Quick sort</h3>
             Enter your size :
-            <input type="text" name="size" id="size_quick">
+            <input class="form-sty"  type="text" name="size" id="size_quick">
             Enter your array :*put , affer every number*
-            <input type="text" name="array" id="array_quick">
+            <input class="form-sty"  type="text" name="array" id="array_quick">
             <button id="quick_result" class="bg-persian">Run</button>
             <div id="quick_output">
 
@@ -1117,11 +1143,11 @@ i = l ; j=r+1
         <div class="half search_box">
             <h3>sequential search </h3>
             Enter your size :
-            <input type="text" name="size" id="size_search">
+            <input class="form-sty"  type="text" name="size" id="size_search">
             Enter your array :*put , affer every number*
-            <input type="text" name="array" id="array_search">
+            <input class="form-sty"  type="text" name="array" id="array_search">
             Enter your key :
-            <input type="text" name="search" id="key_search">
+            <input class="form-sty"  type="text" name="search" id="key_search">
             <button id="search_result" class="bg-persian">Run</button>
             <div id="search_output">
 
@@ -1251,350 +1277,7 @@ i = l ; j=r+1
             <img class="img-style" src="images/search.jpg" alt="quick-des">
         </div>
     </div>
-    <!-- tree -->
-    <section class=" sort wow bounceInUp">
-      
-        <a name="tree"></a>
-        <h3>Tree</h3>
-        <h3> <span class="text-color">Depth First Traversals</span>  </h3>
-        <div class="sort-div">
-            <div class="selection preorder">
-                <h4><span>01:</span> <br>
-                   preorder Traversal 
-                    <hr>
-
-                </h4>
-                <p>
-                    //Input : Binary search tree
-                    <br>
-                    //Output:print the data in preorder (Root,Left,Right)
-                    <br> <br><br><br>
-                    <span class="algo">
-                        <pre>
-                            if node <i class="fas fa-arrow-left"></i> null
-                                  return
-                            print node <i class="fas fa-arrow-right"></i> value
-                            preorder(node <i class="fas fa-arrow-right"></i> left)
-                            preorder(node <i class="fas fa-arrow-right"></i> right)
-                           </pre>
-                    </span>
-                </p>
-
-                <button id="preorder_click" class="bg-blue ">
-                    run code
-                </button>
-                <button id="preorder_des" class="bg-persian ">
-                    description
-                </button>
-            </div>
-            <div class="bubble preorder">
-                <h4><span>02:</span> <br>
-                    Inorder Traversal 
-                    <hr>
-
-                </h4>
-                <p>
-                    //Input : Binary search tree
-                    <br>
-                    //Output:print the data in inorder (Left,Root,Right)
-                    <br><br><br><br>
-                    <span class="algo">
-                        <pre>
-                            if node <i class="fas fa-arrow-left"></i> null
-                                 return
-                            inorder(node <i class="fas fa-arrow-right"></i> left)
-                            print node <i class="fas fa-arrow-right"></i> value
-                            inorder(node <i class="fas fa-arrow-right"></i> right) </pre>
-                    </span>
-                </p>
-
-                <button id="inorder_click" class="bg-blue buttoncolor">
-                    run code
-                </button>
-                <button id="inorder_des" class="bg-persian buttoncolor">
-                    description
-                </button>
-
-            </div>
-            <div class="insertion preorder">
-                <h4><span>03:</span> <br>
-                    Postorder Traversal
-                    <hr>
-
-                </h4>
-                <p>
-                    //Input : Binary search tree
-                    <br>
-                    //Output:print the data in postorder (Left,Right,Root)
-                    <br> <br><br><br>
-                    <span class="algo">
-                        <pre>
-                            if node <i class="fas fa-arrow-left"></i> null
-                                return
-                            postorder(node <i class="fas fa-arrow-right"></i> left)
-                            postorder(node <i class="fas fa-arrow-right"></i> right)
-                            print node <i class="fas fa-arrow-right"></i> value
-                               </pre>
-                    </span>
-                </p>
-
-                <button id="postorder_click" class="bg-blue buttonbg">
-                    run code
-                </button>
-                <button id="postorder_des" class=" bg-persian buttonbg">
-                    description
-                </button>
-            </div>
-        </div>
-    </section>
-    <section class="sort divide  wow bounceInUp ">
-      
-        <h3><span class="text-color">Breath First Traversals</span> </h3>
-        <div class="sort-div">
-            
-            <div class="Search seq ">
-                <h4><span>01:</span> <br>
-                    Level Order Tree
-                    <hr>
-
-                </h4>
-                <div class="text-size">
-                    <p>
-
-                        //Output: index of the first element in A, whose
-                       //value is equal to K or -1 if no such element is found
-                        <br> <br><br>
-                        <pre>
-                                A[n] <- K
-                                i <- 0
-                                while A[i] ≠ K do
-	                                i <- i+1
-                                if i < n 
-	                                return i
-                                else
-	                                return -1
-
-                            </pre>
-                    </p>
-                </div>
-
-
-                <button id="search_click" class="bg-blue">
-                    run code
-                </button>
-                <button id="search_des" class="bg-persian">
-                    description
-                </button>
-            </div>
-
-
-    </section>
-    <!-- tree model -->
-    <!-- preorder -->
-    <!-- model -->
-     
-    <div id="preorder" class="full-screen preorder ">
-        <span class="exit"><i id="exit_preorder" class="fas fa-times-circle"></i></span>
-        <div class="half preorder_box">
-            <h3>Preorder </h3>
-            Enter your size :
-            <input type="text" name="size" id="size_preorder">
-            Enter your array :*put , affer every number*
-            <input type="text" name="array" id="array_preorder">
-            Enter your key :
-            <input type="text" name="search" id="key_preorder">
-            <button id="preorder_result" class="bg-persian">Run</button>
-            <div id="preorder_output">
-
-            </div>
-
-            <div class="button_style">
-                <h5>view code with</h5>
-                <button id="preorder_c++" class="bg-blue">
-                    C++
-                </button>
-                <button id="preorder_java" class="bg-blue">
-                    Java
-                </button>
-                <button id="preorder_javascript" class="bg-blue">
-                    Javascript
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- java script -->
-    <div id="javascript_preorder_model" class=" full-screen preorder ">
-        <span class="exit"><i id="javascript_preorder_exit" class="fas fa-times-circle"></i></span>
-        <div class="size">
-            <h3>Javascript</h3>
-            <pre>
-                function search(items, element, size) {
-                    for (var i = 0; i < size; i++) {
-                        if (items[i] == element) {
-                            return (i + 1);
-                        }
-                    }
-                    return -1;
-                }
-                var arr = [5, 4, 2, 3, 1, 6];
-                var index = search(arr, 8, arr.length);
-                if (index == -1) {
-                    console.log("not found");
-                } else {
-                    console.log("your element at index : " + index);
-                }
-                    </pre>
-           
-        </div>
-    </div>
-    <!-- java -->
-    <div id="java_search_model" class=" full-screen sequential ">
-        <span class="exit"><i id="java_search_exit" class="fas fa-times-circle"></i></span>
-        <div class=" size">
-            <h3>Java</h3>
-            <pre> package javaapplication3;
-               import java.util.Scanner;
-               public class JavaApplication3 {
-                   public static int search(int arr[], int element, int size) {
-                       for (int i = 0; i < size; i++) {
-                           if (arr[i] == element) {
-                               return (i + 1);  }
-                       }
-                       return -1;  }
-                   public static void main(String[] args) {
-                       Scanner input = new Scanner(System.in);
-                       System.out.print("size of list = ");
-                       int n = input.nextInt(); int Array[] = new int[20];
-                       for (int i = 0; i < n; i++) {
-                           int value;
-                           System.out.print("enter the " + (i + 1) + " element: ");
-                           value = input.nextInt();
-                           Array[i] = value;
-                       }
-                       System.out.print("Enter the element U want to search : ");
-                       int element = input.nextInt();
-                       int index = search(Array, element, n);
-                       if (index == -1) {
-                           System.out.print("not found");
-                       } else {
-                           System.out.println("your element at index : " + index);
-                       }
-               
-                   }
-               
-               }
-                         </pre>
-
-        </div>
-    </div>
-    <!-- c++ -->
-    <div id="c_search_model" class=" full-screen preorder">
-        <span class="exit"><i id="c_search_exit" class="fas fa-times-circle"></i></span>
-        <div class="size">
-            <h3>c++</h3>
-            <pre> #include &lt;bits/stdc++.h&gt; 
-                #include <bits/stdc++.h>
-                using namespace std;
-                struct node
-                {
-                    int info;
-                    node* left;
-                    node*right;
-                };
-                node *new_node(int x)
-                {
-                    node *temp;
-                    temp =new node;
-                    temp->info=x;
-                    temp->left=NULL;
-                    temp->right=NULL;
-                    return temp;
-                }
-                node * insert_tree(node * root,int data)
-                {
-                    if(root==NULL)
-                    {
-                        root=new_node(data);
-                        return root;
-                    }
-                    else if(data<=root->info)
-                    {
-                        root->left=insert_tree(root->left,data);
-                    }
-                    else
-                    {
-                        root->right=insert_tree(root->right,data);
-                    }
-                    return root;
-                }
-                void preorder(node * root)
-                {
-                    if(root==NULL)
-                    {
-                        return;
-                    }
-                    cout<< root->info<<" ";
-                    preorder(root->left);
-                    preorder(root->right);
-                }
-                int main()
-                {
-                    node*tree=NULL;
-                    int c,h;
-                    int index = 0;
-                    cout<<"enter the size you want : " ;
-                    cin>>h;
-                    for(int i=0; i< h; i++)
-                    {
-                        cin>>c;
-                        tree= insert_tree(tree,c);
-                    }
-                    cout<<"print preorder "<< endl;
-                    preorder(tree);
-                    
-                    return 1;
-                }
-                
-                 </pre>
-
-        </div>
-    </div>
     
-    <!-- description -->
-    <div id="preorder_description" class=" full-screen tree  ">
-        <span class="exit"><i id="preorder_description_exit" class="fas fa-times-circle"></i></span>
-        <div class="half">
-            <h3>Preorder description</h3>
-            <br>
-            <img class="img-style" src="images/preorder.png" alt="preorder-des">
-            
-            <p>In preorder : 27 14 10 19 35 31 42</p>
-        </div>
-    </div>
-    <!-- inorder -->
-       <!-- description -->
-       <div id="inorder_description" class=" full-screen tree  ">
-        <span class="exit"><i id="inorder_description_exit" class="fas fa-times-circle"></i></span>
-        <div class="half">
-            <h3>Inorder description</h3>
-            <br>
-            <img class="img-style" src="images/preorder.png" alt="inorder-des">
-            
-            <p>In inorder : 10 14 19 27 31 35 42 </p>
-        </div>
-    </div>
-    <!-- postorder -->
-       <!-- description -->
-       <div id="postorder_description" class=" full-screen tree  ">
-        <span class="exit"><i id="postorder_description_exit" class="fas fa-times-circle"></i></span>
-        <div class="half">
-            <h3>Postorder description</h3>
-            <br>
-            <img class="img-style" src="images/preorder.png" alt="postorder-des">
-            
-            <p>In postorder : 10 19 14 31 42 35 27 </p>
-        </div>
-    </div>
       <!-- footer -->
     <a name="contact"></a>
     <footer class="">

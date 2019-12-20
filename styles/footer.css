@@ -81,7 +81,8 @@
    }
    .text{
      text-transform: lowercase;
-     font-size: 18px;
+     font-size: 15px;
+     margin-left: 5%;
    }
    .contact-sty{
      display: flex;

@@ -580,49 +580,6 @@ function search_description_exit() {
 
 }
 document.getElementById("search_description_exit").addEventListener("click", search_description_exit, "false");
-// tree
-//preorder
-//description
-function preorder_description() {
-
-    document.getElementById("preorder_description").style.display = "block";
-}
-document.getElementById("preorder_des").addEventListener("click", preorder_description, "false");
-
-function preorder_description_exit() {
-
-    document.getElementById("preorder_description").style.display = "none";
-
-}
-document.getElementById("preorder_description_exit").addEventListener("click", preorder_description_exit, "false");
-//inorder
-//description
-function inorder_description() {
-
-    document.getElementById("inorder_description").style.display = "block";
-}
-document.getElementById("inorder_des").addEventListener("click", inorder_description, "false");
-
-function inorder_description_exit() {
-
-    document.getElementById("inorder_description").style.display = "none";
-
-}
-document.getElementById("inorder_description_exit").addEventListener("click", inorder_description_exit, "false");
-//postorder
-//description
-function postorder_description() {
-
-    document.getElementById("postorder_description").style.display = "block";
-}
-document.getElementById("postorder_des").addEventListener("click", postorder_description, "false");
-
-function postorder_description_exit() {
-
-    document.getElementById("postorder_description").style.display = "none";
-
-}
-document.getElementById("postorder_description_exit").addEventListener("click", postorder_description_exit, "false");
 //form
  function display() {
     document.getElementById("block").style.display = "block";
@@ -637,3 +594,11 @@ function fexit() {
 
 }
 document.getElementById("exit-form").addEventListener("click", fexit, "false");
+function submit_exit() {
+
+    document.getElementById("text").innerHTML= "Thanks for submit";
+    document.getElementById("text").style.fontSize="30px";
+    document.getElementById("text").style.padding="15%";
+    document.getElementById("text").style.textAlign="center";
+    document.getElementById("text").style.color="#00c6d7";
+}

@@ -46,10 +46,12 @@ header {
 
                 ul {
                     list-style: none;
-                     display: flex;
+                   
                     li {
                         padding-top: 2%;
                         height: 38px;
+                        float: left;
+                         
 
                         &#first_child {
                             width: 100px;
@@ -66,9 +68,9 @@ header {
                         ul {
                             // margin-top: 2%;
                             // margin-right: 10%;
-                            position: absolute;
-                            right: 20%;
-                            top: 15%;
+                            position: relative;
+                            right: 18%;
+                            top:20%;
 
                             li {
                                 display: none;
@@ -130,7 +132,7 @@ section {
             box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
             padding: 3%;
 
-            .deftext {
+            .deftext{
                 h4 {
                     @extend %headstyle;
                     text-transform: capitalize;
@@ -208,11 +210,13 @@ section {
 
                 .bg-blue {
                     @extend %bgblue;
+                    @extend %marignbutton;
                     margin-top: 15%;
                 }
 
                 .bg-persian {
                     @extend %bgpersian;
+                    @extend %marignbutton;
                     margin-top: 15%;
                 }
             }
@@ -242,12 +246,14 @@ section {
 
                 .bg-blue {
                     @extend %buttonstyle;
+                    @extend %marignbutton;
                     background-color: $maincolor;
                     margin-top: 30%;
                 }
 
                 .bg-persian {
                     @extend %buttonstyle;
+                    @extend %marignbutton;
                     background-color: #009988;
                     margin-top: 30%;
                 }
@@ -280,6 +286,7 @@ section {
 
                 .bg-blue {
                     @extend %buttonstyle;
+                    @extend %marignbutton;
                     background-color: $maincolor;
                     margin-top: 40%;
 
@@ -287,6 +294,7 @@ section {
 
                 .bg-persian {
                     @extend %buttonstyle;
+                    @extend %marignbutton;
                     background-color: #009988;
                     margin-top: 40%;
                 }
@@ -321,11 +329,13 @@ section {
 
                 .bg-blue {
                     @extend %bgblue;
+                    @extend %marignbutton;
                     margin-top: 24%;
                 }
 
                 .bg-persian {
                     @extend %bgpersian;
+                    @extend %marignbutton;
                     margin-top: 24%;
                 }
                 .buttonbg{
@@ -356,11 +366,13 @@ section {
 
                 .bg-blue {
                     @extend %bgblue;
+                    @extend %marignbutton;
                     margin-top: 15%;
                 }
 
                 .bg-persian {
                     @extend %bgpersian;
+                    @extend %marignbutton;
                     margin-top: 15%;
                 }
 
@@ -387,11 +399,13 @@ section {
 
                 .bg-blue {
                     @extend %bgblue;
+                    @extend %marignbutton;
                     margin-top: 15%;
                 }
 
                 .bg-persian {
                     @extend %bgpersian;
+                    @extend %marignbutton;
                     margin-top: 15%;
                 }
 
@@ -425,11 +439,13 @@ section {
 
                 .bg-blue {
                     @extend %bgblue;
+                    @extend %marignbutton;
                     margin-top: 15%;
                 }
 
                 .bg-persian {
                     @extend %bgpersian;
+                    @extend %marignbutton;
                     margin-top: 15%;
                 }
             }
@@ -467,6 +483,7 @@ section {
         left: 0;
         top: 534vh;
     }
+    
 
     position: absolute;
     left: 0;
@@ -478,7 +495,7 @@ section {
 
     .exit {
         position: absolute;
-        top: 2%;
+        top: 8%;
         right: 2%;
         color: #fff;
        // z-index: 1;
@@ -518,17 +535,39 @@ section {
         border-radius: 5px;
         box-shadow: 1px 6px 7px #000000b0;
         form{
-         
-           
-            
             fieldset{
                 border-color: #fff;
-                height: 400px;
+                height: 450px;
                 box-shadow: 1px 6px 7px #000000b0;
                 legend{
                     color: $maincolor;
                     font-size: 25px;
                     text-align: center;
+                }
+               
+                  
+                .radio{
+                  
+                    padding-right: 42px;
+                    input{
+                     
+                      width: 7%;
+                    }
+                    
+                }
+                select{
+                    color: $subcolor;
+                    padding: 8px 16px;
+                    background-color: $maincolor;
+                    border: 1px solid $maincolor;
+                   margin-top: 3%;
+                   display: block;
+                }
+                button{
+                  
+                    @extend %bgblue;
+                    margin: 6% 0 0 35%;
+                    
                 }
             }
         }
@@ -558,12 +597,13 @@ section {
         }
 
         input {
-            display: block;
+           // display: block;
             margin: 2% 0;
         }
 
         .bg-persian {
             @extend %bgpersian;
+            @extend %marignbutton;
             width: 20%;
             height: 40px;
             margin: 2% 5%;
@@ -580,6 +620,7 @@ section {
 
             .bg-blue {
                 @extend %bgblue;
+                @extend %marignbutton;
                 margin: 3% 0;
             }
         }
@@ -616,7 +657,9 @@ section {
     }
 }
 
-
+.form-sty{
+    display: block;
+}
 
 %boxstyle {
     width: 32%;
@@ -641,9 +684,11 @@ section {
     font-size: $textsize;
     text-transform: capitalize;
     text-align: center;
-    margin-left: 13%;
     width: 28%;
     height: 50px;
+}
+%marignbutton{
+    margin-left: 13%;
 }
 
 %bgblue {

@@ -37,11 +37,11 @@ header div nav .navbar {
 }
 header div nav .navbar ul {
   list-style: none;
-  display: flex;
 }
 header div nav .navbar ul li {
   padding-top: 2%;
   height: 38px;
+  float: left;
 }
 header div nav .navbar ul li#first_child {
   width: 100px;
@@ -53,9 +53,9 @@ header div nav .navbar ul li#third_child {
   width: 150px;
 }
 header div nav .navbar ul li ul {
-  position: absolute;
-  right: 20%;
-  top: 15%;
+  position: relative;
+  right: 18%;
+  top: 20%;
 }
 header div nav .navbar ul li ul li {
   display: none;
@@ -278,7 +278,7 @@ section.sort .sort-div .Search .bg-persian {
 }
 .full-screen .exit {
   position: absolute;
-  top: 2%;
+  top: 8%;
   right: 2%;
   color: #fff;
 }
@@ -315,13 +315,30 @@ section.sort .sort-div .Search .bg-persian {
 }
 .full-screen .half form fieldset {
   border-color: #fff;
-  height: 400px;
+  height: 450px;
   box-shadow: 1px 6px 7px #000000b0;
 }
 .full-screen .half form fieldset legend {
   color: #00c6d7;
   font-size: 25px;
   text-align: center;
+}
+.full-screen .half form fieldset .radio {
+  padding-right: 42px;
+}
+.full-screen .half form fieldset .radio input {
+  width: 7%;
+}
+.full-screen .half form fieldset select {
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #00c6d7;
+  border: 1px solid #00c6d7;
+  margin-top: 3%;
+  display: block;
+}
+.full-screen .half form fieldset button {
+  margin: 6% 0 0 35%;
 }
 .full-screen .half.search_box {
   height: 550px;
@@ -342,7 +359,6 @@ section.sort .sort-div .Search .bg-persian {
   }
 }
 .full-screen .half input {
-  display: block;
   margin: 2% 0;
 }
 .full-screen .half .bg-persian {
@@ -365,6 +381,10 @@ section.sort .sort-div .Search .bg-persian {
   margin-bottom: 5%;
 }
 
+.form-sty {
+  display: block;
+}
+
 section.sort .sort-div .Search, section.sort .sort-div .selection, section.sort .sort-div .bubble, section.sort .sort-div .insertion, section.sort .sort-div .merge, section.sort .sort-div .quick {
   width: 32%;
   height: 550px;
@@ -379,18 +399,21 @@ section.about .Definition .deftext h4, section.about .reason h4 {
   margin-bottom: 2%;
 }
 
-section.sort .sort-div .Search .bg-persian, section.sort .sort-div .insertion .bg-persian, section.sort .sort-div .merge .bg-persian, section.sort .sort-div .quick .bg-persian, .full-screen .half .bg-persian, section.sort .sort-div .Search .bg-blue, section.sort .sort-div .insertion .bg-blue, section.sort .sort-div .merge .bg-blue, section.sort .sort-div .quick .bg-blue, .full-screen .half .button_style .bg-blue, section.sort .sort-div .selection .bg-blue, section.sort .sort-div .selection .bg-persian, section.sort .sort-div .bubble .bg-blue, section.sort .sort-div .bubble .bg-persian {
+section.sort .sort-div .Search .bg-persian, section.sort .sort-div .insertion .bg-persian, section.sort .sort-div .merge .bg-persian, section.sort .sort-div .quick .bg-persian, .full-screen .half .bg-persian, section.sort .sort-div .Search .bg-blue, section.sort .sort-div .insertion .bg-blue, section.sort .sort-div .merge .bg-blue, section.sort .sort-div .quick .bg-blue, .full-screen .half form fieldset button, .full-screen .half .button_style .bg-blue, section.sort .sort-div .selection .bg-blue, section.sort .sort-div .selection .bg-persian, section.sort .sort-div .bubble .bg-blue, section.sort .sort-div .bubble .bg-persian {
   border: 2px solid #cccccc;
   color: #fff;
   font-size: 14px;
   text-transform: capitalize;
   text-align: center;
-  margin-left: 13%;
   width: 28%;
   height: 50px;
 }
 
-section.sort .sort-div .Search .bg-blue, section.sort .sort-div .insertion .bg-blue, section.sort .sort-div .merge .bg-blue, section.sort .sort-div .quick .bg-blue, .full-screen .half .button_style .bg-blue {
+section.sort .sort-div .Search .bg-blue, section.sort .sort-div .Search .bg-persian, section.sort .sort-div .selection .bg-blue, section.sort .sort-div .selection .bg-persian, section.sort .sort-div .bubble .bg-blue, section.sort .sort-div .bubble .bg-persian, section.sort .sort-div .insertion .bg-blue, section.sort .sort-div .insertion .bg-persian, section.sort .sort-div .merge .bg-blue, section.sort .sort-div .merge .bg-persian, section.sort .sort-div .quick .bg-blue, section.sort .sort-div .quick .bg-persian, .full-screen .half .bg-persian, .full-screen .half .button_style .bg-blue {
+  margin-left: 13%;
+}
+
+section.sort .sort-div .Search .bg-blue, section.sort .sort-div .insertion .bg-blue, section.sort .sort-div .merge .bg-blue, section.sort .sort-div .quick .bg-blue, .full-screen .half form fieldset button, .full-screen .half .button_style .bg-blue {
   background-color: #00c6d7;
 }
 
