@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-header div {
+header.header-img div {
   width: 100%;
   height: 100vh;
   background-size: cover;
   transition: linear 2s;
 }
-header div h1 {
+header.header-img div h1 {
   color: #fff;
   text-transform: uppercase;
   position: absolute;
@@ -19,7 +19,7 @@ header div h1 {
   font-size: 80px;
   font-weight: normal;
 }
-header div p {
+header.header-img div p {
   position: absolute;
   left: 47%;
   top: 59%;
@@ -27,7 +27,7 @@ header div p {
   color: #fff;
   font-size: 10px;
 }
-header div nav .navbar {
+header.header-img div nav .navbar {
   position: fixed;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
@@ -35,40 +35,40 @@ header div nav .navbar {
   height: 38px;
   padding-left: 650px;
 }
-header div nav .navbar ul {
+header.header-img div nav .navbar ul {
   list-style: none;
 }
-header div nav .navbar ul li {
+header.header-img div nav .navbar ul li {
   padding-top: 2%;
   height: 38px;
   float: left;
 }
-header div nav .navbar ul li#first_child {
+header.header-img div nav .navbar ul li#first_child {
   width: 100px;
 }
-header div nav .navbar ul li#second_child {
+header.header-img div nav .navbar ul li#second_child {
   width: 200px;
 }
-header div nav .navbar ul li#third_child {
+header.header-img div nav .navbar ul li#third_child {
   width: 150px;
 }
-header div nav .navbar ul li ul {
-  position: relative;
+header.header-img div nav .navbar ul li ul {
+  position: absolute;
   right: 18%;
-  top: 20%;
+  top: 100%;
 }
-header div nav .navbar ul li ul li {
+header.header-img div nav .navbar ul li ul li {
   display: none;
   width: 100%;
 }
-header div nav .navbar ul li ul li a {
+header.header-img div nav .navbar ul li ul li a {
   color: #009988;
   text-align: center;
 }
-header div nav .navbar ul :hover ul li {
-  display: block;
+header.header-img div nav .navbar ul :hover ul li {
+  display: flex;
 }
-header div nav .navbar ul a {
+header.header-img div nav .navbar ul a {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -76,7 +76,7 @@ header div nav .navbar ul a {
   text-decoration: none;
   text-transform: uppercase;
 }
-header div nav .navbar ul a:hover {
+header.header-img div nav .navbar ul a:hover {
   color: #00c6d7;
 }
 
@@ -100,7 +100,7 @@ section.about .Definition .deftext h4 {
 section.about .Definition .deftext p {
   font-size: 18px;
 }
-section.about .Definition .defimg img {
+section.about .Definition .defimg {
   margin-left: 18%;
   margin-bottom: 5%;
 }
@@ -244,10 +244,74 @@ section.sort .sort-div .Search .bg-persian {
   margin-top: 15%;
 }
 
+section.steps {
+  margin: 5%;
+}
+section.steps h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+section.steps .dis {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+section.steps .dis .define {
+  width: 32%;
+  height: 250px;
+  margin-right: 2%;
+  padding: 2%;
+}
+section.steps .dis .define h4 {
+  text-transform: capitalize;
+  text-align: center;
+}
+section.steps .dis .define p {
+  margin-top: 5%;
+  text-align: center;
+}
+section.steps .dis .define:hover {
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+section.steps .dis .analysis {
+  width: 32%;
+  height: 250px;
+  margin-right: 2%;
+  padding: 2%;
+}
+section.steps .dis .analysis h4 {
+  text-transform: capitalize;
+  text-align: center;
+}
+section.steps .dis .analysis p {
+  margin-top: 5%;
+  text-align: center;
+}
+section.steps .dis .analysis:hover {
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+section.steps .dis .design {
+  width: 32%;
+  height: 250px;
+  margin-right: 2%;
+  padding: 2%;
+}
+section.steps .dis .design h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+section.steps .dis .design p {
+  margin-top: 5%;
+  text-align: center;
+}
+section.steps .dis .design:hover {
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
+}
+
 .full-screen {
   position: absolute;
-  left: 0;
-  top: 227vh;
+  top: 290%;
   display: none;
   width: 100%;
   height: 110vh;
@@ -255,7 +319,6 @@ section.sort .sort-div .Search .bg-persian {
 }
 .full-screen.form {
   position: absolute;
-  left: 0;
   top: -20%;
   z-index: 1;
   width: 100%;
@@ -263,18 +326,11 @@ section.sort .sort-div .Search .bg-persian {
 }
 .full-screen.full {
   position: absolute;
-  left: 0;
-  top: 327vh;
+  top: 390%;
 }
 .full-screen.sequential {
   position: absolute;
-  left: 0;
-  top: 416vh;
-}
-.full-screen.tree {
-  position: absolute;
-  left: 0;
-  top: 534vh;
+  top: 490%;
 }
 .full-screen .exit {
   position: absolute;
@@ -292,7 +348,7 @@ section.sort .sort-div .Search .bg-persian {
   margin: auto;
   background-color: #fff;
   padding: 3% 5%;
-  box-shadow: 1px 6px 7px #000000b0;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
 }
 .full-screen .size h3 {
   transition: 1s ease-in-out;
@@ -303,20 +359,19 @@ section.sort .sort-div .Search .bg-persian {
 }
 .full-screen .half {
   width: 50%;
-  margin: auto;
-  height: 520px;
+  height: 80%;
   background-color: #fff;
   position: absolute;
   top: 10%;
   left: 25%;
   padding: 3% 5%;
   border-radius: 5px;
-  box-shadow: 1px 6px 7px #000000b0;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
 }
 .full-screen .half form fieldset {
   border-color: #fff;
   height: 450px;
-  box-shadow: 1px 6px 7px #000000b0;
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 0px;
 }
 .full-screen .half form fieldset legend {
   color: #00c6d7;
@@ -385,6 +440,152 @@ section.sort .sort-div .Search .bg-persian {
   display: block;
 }
 
+.team-work {
+  margin: 5%;
+}
+.team-work h3 {
+  text-align: center;
+}
+.team-work .team {
+  width: 90%;
+  margin: 5%;
+  height: 400px;
+  display: flex;
+}
+.team-work .team .pic1 {
+  width: 23%;
+  height: 300px;
+  background-image: url("../images/chanyeol.jpg");
+  background-size: cover;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.team-work .team .pic1 .des-pic1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.team-work .team .pic1 .des-pic1 div {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.team-work .team .pic1 .des-pic1 div .def-text {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.team-work .team .pic1 .des-pic1 div i {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 25%;
+}
+.team-work .team .pic1:hover .des-pic1 {
+  display: flex;
+}
+.team-work .team .pic2 {
+  width: 23%;
+  height: 300px;
+  background-image: url("../images/yoona.jpg");
+  background-size: cover;
+  margin-right: 2%;
+}
+.team-work .team .pic2 .des-pic2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.team-work .team .pic2 .des-pic2 div {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.team-work .team .pic2 .des-pic2 div .def-text {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.team-work .team .pic2 .des-pic2 div i {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 25%;
+}
+.team-work .team .pic2:hover .des-pic2 {
+  display: flex;
+}
+.team-work .team .pic3 {
+  width: 23%;
+  height: 300px;
+  background-image: url("../images/seh.jpg");
+  background-size: cover;
+  margin-right: 2%;
+}
+.team-work .team .pic3 .des-pic3 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.team-work .team .pic3 .des-pic3 div {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.team-work .team .pic3 .des-pic3 div .def-text {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.team-work .team .pic3 .des-pic3 div i {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 25%;
+}
+.team-work .team .pic3:hover .des-pic3 {
+  display: flex;
+}
+.team-work .team .pic4 {
+  width: 23%;
+  height: 300px;
+  background-image: url("../images/iu.jpg");
+  background-size: cover;
+  margin-right: 2%;
+}
+.team-work .team .pic4 .des-pic4 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.team-work .team .pic4 .des-pic4 div {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.team-work .team .pic4 .des-pic4 div .def-text {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.team-work .team .pic4 .des-pic4 div i {
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 25%;
+}
+.team-work .team .pic4:hover .des-pic4 {
+  display: flex;
+}
+
 section.sort .sort-div .Search, section.sort .sort-div .selection, section.sort .sort-div .bubble, section.sort .sort-div .insertion, section.sort .sort-div .merge, section.sort .sort-div .quick {
   width: 32%;
   height: 550px;
@@ -393,7 +594,7 @@ section.sort .sort-div .Search, section.sort .sort-div .selection, section.sort 
   margin-right: 2%;
 }
 
-section.about .Definition .deftext h4, section.about .reason h4 {
+section.about .Definition .deftext h4, section.about .reason h4, section.steps .dis .define h4, section.steps .dis .analysis h4, section.steps .dis .design h4 {
   color: #009988;
   font-size: 20px;
   margin-bottom: 2%;

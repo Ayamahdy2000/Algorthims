@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Talk about algorithms and write the algorithms">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
     <title>Algo</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="css/libs/animate.css">
@@ -15,44 +15,42 @@
 </head>
 
 <body>
-     <div id="block" class="full-screen form">
+    <div id="block" class="full-screen form">
         <span class="exit"><i id="exit-form" class="fas fa-times-circle"></i></span>
         <div id="text" class="half">
-          <form id="submit" onsubmit="submit_exit()" action="#" method="POST">
-              <fieldset>
-                  <legend>Sign up</legend>
-               
-                  
-                    <label class="form-sty" for="yourname"> Enter your name :</label> 
-                    <input class="form-sty" type="text" name="name" id="yourname"  required="required">
-                    <label class="form-sty"  for="email">Enter your e_mail :</label> 
-                    <input class="form-sty" type="email" name="email" id="email"   required="required" >
-                    <label class="form-sty" for="yourpassword">Enter your password :</label> 
-                    <input class="form-sty" type="password" name="password" id="yourpassword"  required="required">
-                  
-                    <span class="radio" >
+            <form id="submit" onsubmit="submit_exit()" action="#" method="POST">
+                <fieldset>
+                    <legend>Sign up</legend>
+                    <label class="form-sty" for="yourname"> Enter your name :</label>
+                    <input class="form-sty" type="text" name="name" id="yourname" required="required">
+                    <label class="form-sty" for="email">Enter your e_mail :</label>
+                    <input class="form-sty" type="email" name="email" id="email" required="required">
+                    <label class="form-sty" for="yourpassword">Enter your password :</label>
+                    <input class="form-sty" type="password" name="password" id="yourpassword" required="required">
+
+                    <span class="radio">
                         <input type="radio" name="gender" value="male" checked> Male
                         <input type="radio" name="gender" value="female"> Female
-                      
-                      </span>
-                  <br>
-                
-                  <select  required="required" >
-                    <option value="1"> Your country </option>
-                    <option value="2">Egypt</option>
-                    <option value="3">South Korea</option>
-                    <option value="4">England</option>
-                   
-                </select>
-                <button type="submit"  >REGESTER</button>
-                   
-                  
-              </fieldset>
-             
-          </form>
-         
-            </div>
-            </div>
+
+                    </span>
+                    <br>
+
+                    <select required="required">
+                        <option value="1"> Your country </option>
+                        <option value="2">Egypt</option>
+                        <option value="3">South Korea</option>
+                        <option value="4">England</option>
+
+                    </select>
+                    <button type="submit">REGESTER</button>
+
+
+                </fieldset>
+
+            </form>
+
+        </div>
+    </div>
     <a name="home"></a>
     <!-- header -->
     <header id="hidden" class="header-img">
@@ -81,7 +79,7 @@
     </header>
     <!-- end header -->
     <!-- about -->
-   
+
     <section class="about wow bounceInUp">
         <a name="about"></a>
         <h3>about algorithm</h3>
@@ -95,7 +93,7 @@ for solving a problem, i.e., for obtaininga required output
 for any legitimate input in a finite amount of time.      
                     </pre>
                     There are 3 main features of algorithm from its definition:
-                    
+
                     <br>
                     <ol>
 
@@ -136,6 +134,33 @@ the steps to get an output for a given input.
             </p>
         </div>
     </section>
+    <section class="steps wow bounceInUp">
+        <h3>Steps of algorithms</h3>
+        <div class="dis">
+            <div class="define">
+                <h4>Obtain a description of the problem</h4>
+                <p>This step is much more difficult than it appears. In the following discussion, the word client refers
+                    to someone who wants to find a solution to a problem, and the word developer refers to someone who
+                    finds a way to solve the problem. The developer must create an algorithm that will solve the
+                    client's problem.
+
+                </p>
+            </div>
+            <div class="analysis">
+                <h4>Analyze the problem.</h4>
+                <p>The purpose of this step is to determine both the starting and ending points for solving the problem.
+                    This process is analogous to a mathematician determining what is given and what must be proven. A
+                    good problem description makes it easier to perform this step.</p>
+            </div>
+            <div class="design">
+                <h4>Desgin</h4>
+                <p>The first stage is to identify the problem and thoroughly understand it. This is where it’s important
+                    you consult with everybody who has an interest in the problem. Speak with them and see how they see
+                    the problem and what they need out of the solution so their part of the project or program can
+                    progress.</p>
+            </div>
+        </div>
+    </section>
     <!-- sort -->
     <section class=" sort wow bounceInUp">
 
@@ -144,7 +169,7 @@ the steps to get an output for a given input.
 
         <div class="sort-div">
             <div class="selection ">
-                <h4><span >01:</span> <br>
+                <h4><span>01:</span> <br>
                     selection sort
                     <hr>
 
@@ -298,9 +323,9 @@ the steps to get an output for a given input.
     s = Partition (A[l..r]) // s is a split position
     QuickSort(A[l..s-1])
     QuickSort(A[s+1..r])</pre></span>
-                                //Input: Subarray of arr A[0.n-1], defined by its left & right <br>
-                                //Output: Partition of A[l..r], with the split position returned as
-                               
+                        //Input: Subarray of arr A[0.n-1], defined by its left & right <br>
+                        //Output: Partition of A[l..r], with the split position returned as
+
 
                         <span>
                             <pre>p=A[i]
@@ -329,7 +354,7 @@ i = l ; j=r+1
 
 
     </section>
-    
+
     <!-- selection_model -->
     <div id="selection" class="full-screen  ">
         <span class="exit"><i id="exit_selection" class="fas fa-times-circle"></i></span>
@@ -638,9 +663,9 @@ i = l ; j=r+1
         <div class="half">
             <h3>Insertion sort</h3>
             Enter your size :
-            <input class="form-sty"  type="text" name="size" id="size_insertion">
+            <input class="form-sty" type="text" name="size" id="size_insertion">
             Enter your array :*put , affer every number*
-            <input class="form-sty"  type="insertion_text" name="array" id="array_insertion">
+            <input class="form-sty" type="insertion_text" name="array" id="array_insertion">
             <button id="insertion_result" class="bg-persian">Run</button>
             <div id="insertion_output">
 
@@ -773,19 +798,19 @@ i = l ; j=r+1
             <h3>Insertion description</h3>
             <br>
             <p>Example: 7 5 4 2</p>
-            
+
             <img class="img-style" src="images/insertion.png" alt="">
         </div>
     </div>
-     <!-- merge_model -->
-     <div id="merge" class="full-screen full ">
+    <!-- merge_model -->
+    <div id="merge" class="full-screen full ">
         <span class="exit"><i id="exit_merge" class="fas fa-times-circle"></i></span>
         <div class="half">
             <h3>Merge sort</h3>
             Enter your size :
-            <input class="form-sty"  type="text" name="merge_size" id="size_merge">
+            <input class="form-sty" type="text" name="merge_size" id="size_merge">
             Enter your array :*put , affer every number*
-            <input class="form-sty"  type="text" name="merge_array" id="array_merge">
+            <input class="form-sty" type="text" name="merge_array" id="array_merge">
             <button id="merge_result" class="bg-persian">Run</button>
             <div id="merge_output">
 
@@ -929,14 +954,14 @@ i = l ; j=r+1
         </div>
     </div>
     <!-- quick_model -->
-    <div id="quick" class="full-screen full "> class="form-sty" 
+    <div id="quick" class="full-screen full "> class="form-sty"
         <span class="exit"><i id="exit_quick" class="fas fa-times-circle"></i></span>
         <div class="half">
             <h3>Quick sort</h3>
             Enter your size :
-            <input class="form-sty"  type="text" name="size" id="size_quick">
+            <input class="form-sty" type="text" name="size" id="size_quick">
             Enter your array :*put , affer every number*
-            <input class="form-sty"  type="text" name="array" id="array_quick">
+            <input class="form-sty" type="text" name="array" id="array_quick">
             <button id="quick_result" class="bg-persian">Run</button>
             <div id="quick_output">
 
@@ -995,7 +1020,7 @@ i = l ; j=r+1
                 var result = quickSort(arrSort, 0, arrSort.length - 1);
                 console.log(result);
                     </pre>
-           
+
         </div>
     </div>
     <!-- java -->
@@ -1093,15 +1118,15 @@ i = l ; j=r+1
         </div>
     </div>
     <!-- search -->
-    
+
     <section class="sort divide  wow bounceInUp ">
         <a name="Search"></a>
         <h3>search</h3>
         <div class="sort-div">
-            
+
             <div class="Search seq ">
                 <h4><span>01:</span> <br>
-                    sequential search 
+                    sequential search
                     <hr>
 
                 </h4>
@@ -1109,7 +1134,7 @@ i = l ; j=r+1
                     <p>
 
                         //Output: index of the first element in A, whose
-                       //value is equal to K or -1 if no such element is found
+                        //value is equal to K or -1 if no such element is found
                         <br> <br><br>
                         <pre>
                                 A[n] <- K
@@ -1136,18 +1161,18 @@ i = l ; j=r+1
 
 
     </section>
-     <!-- search_model -->
-     
-     <div id="search" class="full-screen sequential ">
+    <!-- search_model -->
+
+    <div id="search" class="full-screen sequential ">
         <span class="exit"><i id="exit_search" class="fas fa-times-circle"></i></span>
         <div class="half search_box">
             <h3>sequential search </h3>
             Enter your size :
-            <input class="form-sty"  type="text" name="size" id="size_search">
+            <input class="form-sty" type="text" name="size" id="size_search">
             Enter your array :*put , affer every number*
-            <input class="form-sty"  type="text" name="array" id="array_search">
+            <input class="form-sty" type="text" name="array" id="array_search">
             Enter your key :
-            <input class="form-sty"  type="text" name="search" id="key_search">
+            <input class="form-sty" type="text" name="search" id="key_search">
             <button id="search_result" class="bg-persian">Run</button>
             <div id="search_output">
 
@@ -1189,7 +1214,7 @@ i = l ; j=r+1
                     console.log("your element at index : " + index);
                 }
                     </pre>
-           
+
         </div>
     </div>
     <!-- java -->
@@ -1277,20 +1302,17 @@ i = l ; j=r+1
             <img class="img-style" src="images/search.jpg" alt="quick-des">
         </div>
     </div>
-    
-      <!-- footer -->
+
+    <!-- contact -->
     <a name="contact"></a>
-    <footer class="">
         <div class="container">
-            <div class="contact">
-                <h3>Contact Us</h3>
-            </div>
+
+            <h3>Contact Us</h3>
+
             <div class="footer-sty">
                 <div class="contact_info">
 
-                    <h4> Contact Info
-
-                    </h4>
+                    <h4> Contact Info </h4>
                     <div class="contact-sty">
                         <p>
                             <pre><i class="far fa-envelope"></i>   email:
@@ -1303,7 +1325,7 @@ i = l ; j=r+1
                         <p>
 
                             <pre> <i class="fas fa-mobile-alt"></i>   phone: 
-<span class="text">01022122578</span>                       
+<span class="text">010-020-0340 </span>                       
                         </pre>
                         </p>
                     </div>
@@ -1326,6 +1348,63 @@ i = l ; j=r+1
             </div>
 
         </div>
+        <section class="team-work">
+            <h3>Talented Team</h3>
+            <div class="team wow pulse">
+                <div class="pic1">
+                    <div class="des-pic1">
+                       <div> <span class="def-text">chanyeol</span>
+
+                     
+                            
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        
+                       </div> 
+                    </div>
+                </div>
+                <div class="pic2">
+                    <div class="des-pic2">
+                        <div> <span class="def-text">Park yoona</span>
+ 
+                      
+                             
+                             <a href=""><i class="fab fa-facebook-f"></i></a>
+                             <a href=""><i class="fab fa-twitter"></i></a>
+                             <a href=""><i class="fab fa-linkedin-in"></i></a>
+                         
+                        </div> 
+                     </div>
+                </div >
+                <div class="pic3">
+                    <div class="des-pic3">
+                        <div><span class="def-text">Park shin </span>
+                           <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                    </div>
+                </div>
+                <div class="pic4">
+                    <div class="des-pic4 ">
+                        <div><span class="def-text">Lee Ji-eun</span>
+                           <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                    </div>
+                </div>
+                </div>
+        </section>
+    <footer >
+        Copyright © Algo 2019
+        <span class="icon">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-tumblr"></i></a>
+        </span>
+
     </footer>
 
     <script src="js/main.js"></script>

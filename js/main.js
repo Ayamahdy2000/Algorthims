@@ -1,3 +1,25 @@
+//form
+function display() {
+    document.getElementById("block").style.display = "block";
+}
+window.addEventListener("load", display, "false");
+
+function fexit() {
+
+    document.getElementById("block").style.display = "none";
+
+}
+// false bubbling 
+document.getElementById("exit-form").addEventListener("click", fexit, "false");
+function submit_exit() {
+
+    document.getElementById("text").innerHTML= "Thanks for submit";
+    document.getElementById("text").style.fontSize="30px";
+    document.getElementById("text").style.padding="15%";
+    document.getElementById("text").style.textAlign="center";
+    document.getElementById("text").style.color="#00c6d7";
+}
+
 //slide show
 var img = [];
 var i = 0;
@@ -10,13 +32,14 @@ function change() {
 
     document.getElementById("image").style.backgroundImage = img[i];
 
-    if (i < img.length ) {
+    if (i < img.length - 1 ) {
         i++;
     } else {
-        i = 0
+        i = 0;
     }
     setTimeout("change()", time);
 }
+
 window.onload = change();
 //end slide
 //model
@@ -580,25 +603,3 @@ function search_description_exit() {
 
 }
 document.getElementById("search_description_exit").addEventListener("click", search_description_exit, "false");
-//form
- function display() {
-    document.getElementById("block").style.display = "block";
-  
-
-}
-window.addEventListener("load", display, "false");
-
-function fexit() {
-
-    document.getElementById("block").style.display = "none";
-
-}
-document.getElementById("exit-form").addEventListener("click", fexit, "false");
-function submit_exit() {
-
-    document.getElementById("text").innerHTML= "Thanks for submit";
-    document.getElementById("text").style.fontSize="30px";
-    document.getElementById("text").style.padding="15%";
-    document.getElementById("text").style.textAlign="center";
-    document.getElementById("text").style.color="#00c6d7";
-}
